@@ -16,5 +16,6 @@ describe('the bubble sorting algorithm', function(){
     spyOn(window, 'swap')
     bubbleSort(test_sort_arr);
     expect(swap.calls.count()).toEqual(55)
+    expect(bubbleSort(test_sort_arr)).toEqual(test_sorted_arr)
   })
 })
